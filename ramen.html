@@ -6,6 +6,11 @@
   <div class="container">
   	<header>
   	  <h1>Ramen List</h1>
+
+  	  <!-- add a form below the h1 -->
+  	  <form class="new-ramen-item">
+        <input type="text" name="text" placeholder="Type to add a new ramen experience title" />
+      </form>
   	</header>
 
   	<ul>
@@ -14,15 +19,16 @@
   	  {{/each}}
   	</ul>
   </div>
+
   <h1>Where ramen enthusiasts unite!</h1>
-  {{> hello}}
+  {{> count}}
 </body>
 
 <template name="ramenItemTemplate">
 	<li>{{text}}</li>
 </template>
 
-<template name="hello">
+<template name="count">
   <button>Press</button>
   <p>You've pressed the button {{counter}} times.</p>
 </template>
