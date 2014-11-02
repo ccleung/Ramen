@@ -1,6 +1,6 @@
-RamenItems = new Mongo.Collection("ramenItems");
 
-if (Meteor.isClient) {
+
+/*if (Meteor.isClient) {
   // counter starts at 0
   Session.setDefault("counter", 0);
 
@@ -19,9 +19,9 @@ if (Meteor.isClient) {
 
   Template.body.helpers({
     ramenItems: function() {
-      /*{ ramenItem: "This is ramen 1"},
-      { ramenItem: "This is ramen 2"},
-      { ramenItem: "This is ramen 3"}*/
+      //return [{ text: "This is ramen 1"},
+      //{ text: "This is ramen 2"},
+      //{ text: "This is ramen 3"}]
       return RamenItems.find({}, {sort: {createdAt: -1}});
     }
   });
@@ -47,4 +47,4 @@ if (Meteor.isServer) {
   Meteor.startup(function () {
     // code to run on server at startup
   });
-}
+}*/
